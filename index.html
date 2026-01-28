@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Quản lý sản phẩm</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>📦 Product Management</h1>
+        <p class="subtitle">Hệ thống tìm kiếm và quản lý sản phẩm</p>
+    </header>
+
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm... (Rog, Raz, Ali...)">
+    </div>
+
+    <div class="card">
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-id">ID</th>
+                    <th class="col-title">Tên sản phẩm</th>
+                    <th class="col-category">Danh mục</th>
+                    <th class="col-price">Giá</th>
+                    <th class="col-description">Mô tả</th>
+                    <th class="col-image">Hình ảnh</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+
+        <div class="pagination">
+            <button class="page-btn" id="prevBtn">← Trước</button>
+            <span id="pageInfo">Trang 1 / 1</span>
+            <button class="page-btn" id="nextBtn">Sau →</button>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
